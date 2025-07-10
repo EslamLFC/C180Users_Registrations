@@ -39,7 +39,14 @@ public class Resources {
     public static final String Corporate_Email = First_name + Last_name + generateRandomEmailNumber() + "@teml.net";
     public static final String CorporateName = "United " + Corporate_Email;
     // Set of Logos to be used as corporate logo
-    private static final String[] CorporateLogos = {"D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\Ik37TT0PbcTz3kv3iZTXMb7cGZm8UJ-metaZmluYWxsbGxsbGxsbGxsbGwtbG9nZ2dnZ2dnZ28tZGFya2sucG5n-.png", "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\01JF8KBRHZ4DEDNM0ETJDYF0SW.png", "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\3BbJfQyPoQuZCMBWRLubeQ49siesVj-metaYmx1ZS5wbmc=-.png", "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\cXW2J5j1ZXIU9MX8omRb3P7t1eHBoQ-metaNC5wbmc=-.png", "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\01JF8K8RCFNZJV3B7EAKG44XAJ.jpeg", "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\Cit.jpg", "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\01JF8JVAXC1J0N3QJG2SZAEBRW.png",};
+    private static final String[] CorporateLogos = {"D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\Ik37TT0PbcTz3kv3iZTXMb7cGZm8UJ-metaZmluYWxsbGxsbGxsbGxsbGwtbG9nZ2dnZ2dnZ28tZGFya2sucG5n-.png",
+            "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\01JF8KBRHZ4DEDNM0ETJDYF0SW.png",
+            "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\3BbJfQyPoQuZCMBWRLubeQ49siesVj-metaYmx1ZS5wbmc=-.png",
+            "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\cXW2J5j1ZXIU9MX8omRb3P7t1eHBoQ-metaNC5wbmc=-.png",
+            "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\01JF8K8RCFNZJV3B7EAKG44XAJ.jpeg",
+            "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\Cit.jpg",
+            "D:\\Career 180\\Career-180\\Staging\\Test Data\\Images\\Sponsors, Corporates\\01JF8JVAXC1J0N3QJG2SZAEBRW.png",
+    };
 
     public static String SelectCorporateLogo() {
         Random random = new Random();
