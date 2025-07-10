@@ -49,8 +49,9 @@ public class TC3_Corporate_Registration {
         CorporateD.Email().sendKeys(Corporate_Email);
         CorporateD.Password().sendKeys(Password);
         CorporateD.Corporate_Logo().sendKeys(SelectCorporateLogo());
-        js.executeScript("window.scrollBy(0,1000)");
-        Thread.sleep(5000);
+        Thread.sleep(6000);
+        js.executeScript("window.scrollBy(0,2000)");
+        Thread.sleep(1000);
         CorporateD.RegisterButton().click();
     }
 

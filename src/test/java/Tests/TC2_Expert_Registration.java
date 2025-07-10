@@ -50,7 +50,7 @@ public class TC2_Expert_Registration {
         ExpertD.Email().sendKeys(Expert_Email);
         ExpertD.Password().sendKeys(Password);
         js.executeScript("window.scrollBy(0,1000)");
-        Thread.sleep(4000);
+        Thread.sleep(3000);
         ExpertD.RegisterButton().click();
     }
 
