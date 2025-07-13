@@ -19,7 +19,7 @@ public class Resources {
     }
     public static int generateRandomSubscribeIndex() {
         Random random = new Random();
-        return random.nextInt(0, 3);
+        return random.nextInt(0, 2);
     }
 
     // Common
@@ -61,6 +61,6 @@ public class Resources {
     }
 
     // Login Credentials
-    public static final String Login_Email = "NourHanafy7474@teml.net"; // This Email should be changed after Success subscribe process
+    public static final String Login_Email = "NourHanafy7598@teml.net"; // This Email should be changed after Success subscribe process
 
 }

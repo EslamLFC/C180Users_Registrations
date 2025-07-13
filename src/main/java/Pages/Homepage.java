@@ -24,7 +24,7 @@ public class Homepage {
     // Expert Form Button
     By JoinExpert = By.cssSelector("a[href='https://staging-career-180.com/en/auth/register/expert']");
     By NotificationBellIcon = By.cssSelector("body > header:nth-child(1) > nav:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > button:nth-child(1) > i:nth-child(1)");
-    By SubscriptionPlansBtns = By.cssSelector("a[href][class='block w-full text-center px-6 py-3 text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-900']");
+    By SubscriptionPlansBtns = By.cssSelector("a[href][class='block w-full text-center px-6 py-3 text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-900 rounded-t-none']");
     // Actions
     public WebElement Sing_in_Button() {
         return driver.findElement(Sing_inBtn);
