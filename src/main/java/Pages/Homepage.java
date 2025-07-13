@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import static PageResources.Resources.*;
+
 public class Homepage {
     // Constructor
     WebDriver driver;
@@ -21,7 +23,8 @@ public class Homepage {
     By JoinCorporate = By.cssSelector("a[href='https://staging-career-180.com/en/auth/register/corporate']");
     // Expert Form Button
     By JoinExpert = By.cssSelector("a[href='https://staging-career-180.com/en/auth/register/expert']");
-
+    By NotificationBellIcon = By.cssSelector("body > header:nth-child(1) > nav:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > button:nth-child(1) > i:nth-child(1)");
+    By SubscriptionPlansBtns = By.cssSelector("a[href][class='block w-full text-center px-6 py-3 text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-900']");
     // Actions
     public WebElement Sing_in_Button() {
         return driver.findElement(Sing_inBtn);
@@ -42,6 +45,10 @@ public class Homepage {
     public WebElement Join_as_Expert() {
         return driver.findElement(JoinExpert);
     }
-
-
+    public WebElement Notifications_Bell_Icon(){
+        return driver.findElement(NotificationBellIcon);
+    }
+    public WebElement Subscription_Plans(){
+        return driver.findElements(SubscriptionPlansBtns).get(generateRandomSubscribeIndex());
+    }
 }

@@ -1,8 +1,7 @@
-package Tests;
+package Registrations_Tests;
 
-import Pages.ExpertForm;
 import Pages.Homepage;
-import org.openqa.selenium.JavascriptExecutor;
+import Pages.LearnerForm;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
@@ -13,11 +12,10 @@ import java.time.Duration;
 
 import static PageResources.Resources.*;
 
-public class TC2_Expert_Registration {
+public class TC1_Learner_Registration {
     WebDriver driver;
     Homepage HomePageD;
-    ExpertForm ExpertD;
-    JavascriptExecutor js;
+    LearnerForm LearnerD;
 
     @BeforeClass
     public void SetUp() {
@@ -25,8 +23,7 @@ public class TC2_Expert_Registration {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
         HomePageD = new Homepage(driver);
-        ExpertD = new ExpertForm(driver);
-        js = (JavascriptExecutor) driver;
+        LearnerD = new LearnerForm(driver);
     }
 
     @Test(priority = 0)
@@ -35,29 +32,28 @@ public class TC2_Expert_Registration {
         Thread.sleep(2000);
         HomePageD.Sing_in_Button().click();
         HomePageD.Create_an_Account_Button().click();
-        HomePageD.Join_as_Expert().click();
+        HomePageD.Join_as_Learner().click();
         Thread.sleep(1500);
     }
 
     @Test(priority = 1)
     public void Fill_The_Form() throws InterruptedException {
-        ExpertD.First_Name().sendKeys(First_name);
-        ExpertD.Last_Name().sendKeys(Last_name);
-        ExpertD.Phone_Number().sendKeys(Expert_PhoneNumber);
-        ExpertD.Job_Title().sendKeys(JobTitle);
-        ExpertD.Select_Career_Interest();
-        ExpertD.LinkedIn_Account().sendKeys(LinkedInAccount);
-        ExpertD.Email().sendKeys(Expert_Email);
-        ExpertD.Password().sendKeys(Password);
-        js.executeScript("window.scrollBy(0,1000)");
-        Thread.sleep(3000);
-        ExpertD.RegisterButton().click();
+        LearnerD.First_Name().sendKeys(First_name);
+        LearnerD.Last_Name().sendKeys(Last_name);
+        LearnerD.Select_Gender();
+        LearnerD.Phone_Number().sendKeys(Learner_PhoneNumber);
+        LearnerD.Select_Governorate();
+        LearnerD.Email().sendKeys(Learner_Email);
+        LearnerD.Password().sendKeys(Password);
+        Thread.sleep(1000);
+        LearnerD.RegisterButton().click();
     }
 
     @AfterClass
     public void TearDown() throws InterruptedException {
         Thread.sleep(2000);
 //        driver.quit();
-        System.out.println(Expert_Email + "\n" + Password);
+        System.out.println(Learner_Email + "\n" + Password);
+
     }
 }

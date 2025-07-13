@@ -17,6 +17,10 @@ public class Resources {
         Random random = new Random();
         return random.nextInt(1, 3);
     }
+    public static int generateRandomSubscribeIndex() {
+        Random random = new Random();
+        return random.nextInt(0, 3);
+    }
 
     // Common
     public static final String HomePageURL = "https://staging-career-180.com/en/home";
@@ -24,6 +28,7 @@ public class Resources {
     public static final String Last_name = "Hanafy";
     public static final String Password = "Pa$$w0rd!";
     public static final String JobTitle = "General Manager";
+    public static final String PromoCode = "Quosvoluptatequia";
 
     // Learner
     public static final String Learner_PhoneNumber = String.valueOf(generateRandomPhoneNumber());
@@ -54,4 +59,8 @@ public class Resources {
         int index = random.nextInt(CorporateLogos.length); // Generate a random index
         return CorporateLogos[index]; // Select the string at the random index
     }
+
+    // Login Credentials
+    public static final String Login_Email = "NourHanafy7474@teml.net"; // This Email should be changed after Success subscribe process
+
 }
