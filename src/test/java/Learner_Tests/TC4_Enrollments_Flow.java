@@ -1,4 +1,4 @@
-package Login_Subscribe_Tests;
+package Learner_Tests;
 
 import Pages.CheckoutPage;
 import Pages.CoursesPage;
@@ -16,7 +16,7 @@ import java.time.Duration;
 
 import static PageResources.Resources.*;
 
-public class TC4_Learner_Flow {
+public class TC4_Enrollments_Flow {
     WebDriver driver;
     Homepage HomePageD;
     LoginForm LoginD;
@@ -39,7 +39,7 @@ public class TC4_Learner_Flow {
     }
 
     @Test(priority = 0)
-    public void LoginForm() throws InterruptedException {
+    public void Login() throws InterruptedException {
         driver.navigate().to(HomePageURL);
         Thread.sleep(1000);
         HomePageD.Sing_in_Button().click();
@@ -67,8 +67,9 @@ public class TC4_Learner_Flow {
             System.out.println(e + "\n" + "User Already Subscribed");
         }
     }
-    @Test (priority = 2)
-    public void Course_Enrollment() throws InterruptedException{
+
+    @Test(priority = 2)
+    public void Course_Enrollment() throws InterruptedException {
         HomePageD.Qualifying_Menu().click();
         Thread.sleep(500);
         HomePageD.Recorded_Course().click();
@@ -79,17 +80,19 @@ public class TC4_Learner_Flow {
         try {
             CourseD.Read_More().click();
         } catch (Exception e) {
-            System.out.println("Description isn't long" +"\n"+ e);
+            System.out.println("Description isn't long" + "\n" + e);
         }
         Thread.sleep(1000);
         CourseD.Scroll_To_Enroll_Button();
         CourseD.Enroll_Now().click();
+        Thread.sleep(3000);
+        driver.navigate().back();
     }
 
     @AfterClass
     public void TearDown() throws InterruptedException {
         Thread.sleep(5000);
-//        driver.quit();
+        driver.quit();
         softAssert.assertAll();
     }
 }
