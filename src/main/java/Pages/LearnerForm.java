@@ -20,6 +20,7 @@ public class LearnerForm {
     By LastNameField = By.id("last_name");
     By GenderField = By.id("gender");
     By PhoneNumberField = By.id("phone_number");
+    By CountryCodeField = By.cssSelector("select[class='block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white sm:text-sm max-w-36']");
     By GovernorateField = By.id("governorate_id");
     By EmailField = By.id("email");
     By PasswordField = By.id("password");
@@ -32,6 +33,10 @@ public class LearnerForm {
 
     public WebElement Last_Name() {
         return driver.findElement(LastNameField);
+    }
+
+    public WebElement CountryCode_Filed() {
+        return driver.findElement(CountryCodeField);
     }
 
     public WebElement Phone_Number() {
