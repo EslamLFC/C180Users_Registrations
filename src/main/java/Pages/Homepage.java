@@ -15,8 +15,8 @@ public class Homepage {
     }
 
     // Locators
-    By Sing_inBtn = By.cssSelector("body > header:nth-child(1) > nav:nth-child(1) > div:nth-child(3) > div:nth-child(1) > button:nth-child(4) > span:nth-child(1) > span:nth-child(1)");
-    By Create_AccountBtn = By.cssSelector("button[class='inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 dark:from-primary-500 dark:to-primary-600 dark:hover:from-primary-600 dark:hover:to-primary-700 rounded-lg shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-800 transition-all duration-200 ease-in-out']");
+    By Sing_inBtn = By.cssSelector("body > header:nth-child(1) > nav:nth-child(1) > div:nth-child(3) > div:nth-child(1) > button:nth-child(4) > span:nth-child(1)");
+    By Create_AccountBtn = By.cssSelector("a[href='https://staging-career-180.com/en/auth/register/user?redirectUrl=https://staging-career-180.com/en/home']");
     // Learner Form Button
     By JoinLearner = By.cssSelector("a[href='https://staging-career-180.com/en/auth/register/user?redirectUrl=https://staging-career-180.com/en/home']");
     // Corporate Form Button

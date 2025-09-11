@@ -36,7 +36,7 @@ public class TC1_Learner_Registration {
         Thread.sleep(2000);
         HomePageD.Sing_in_Button().click();
         HomePageD.Create_an_Account_Button().click();
-        HomePageD.Join_as_Learner().click();
+//        HomePageD.Join_as_Learner().click();
         Thread.sleep(1500);
     }
 
