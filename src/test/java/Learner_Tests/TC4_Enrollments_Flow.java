@@ -1,9 +1,6 @@
 package Learner_Tests;
 
-import Pages.CheckoutPage;
-import Pages.CoursesPage;
-import Pages.Homepage;
-import Pages.LoginForm;
+import Pages.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -24,6 +21,7 @@ public class TC4_Enrollments_Flow {
     JavascriptExecutor js;
     SoftAssert softAssert;
     CoursesPage CourseD;
+    CourseWatchingPage CourseWatching;
 
     @BeforeClass
     public void SetUp() {
@@ -34,6 +32,7 @@ public class TC4_Enrollments_Flow {
         LoginD = new LoginForm(driver);
         CheckoutD = new CheckoutPage(driver);
         CourseD = new CoursesPage(driver);
+        CourseWatching = new CourseWatchingPage(driver);
         js = (JavascriptExecutor) driver;
         softAssert = new SoftAssert();
     }
@@ -86,6 +85,10 @@ public class TC4_Enrollments_Flow {
         CourseD.Scroll_To_Enroll_Button();
         CourseD.Enroll_Now().click();
         Thread.sleep(3000);
+        js.executeScript("window.scrollBy(0,200)");
+        CourseWatching.Play_Button().click();
+        Thread.sleep(500);
+        CourseWatching.Skip_10Sec().click();
 //        driver.navigate().back();
     }
 
