@@ -52,7 +52,7 @@ public class TC4_Enrollments_Flow {
 
     @Test(priority = 1/*, enabled = false*/)
     public void Subscribe() throws InterruptedException {
-        js.executeScript("window.scrollBy(0,2500)");
+        js.executeScript("window.scrollBy(0,3500)");
         Thread.sleep(1000);
         try {
             HomePageD.Subscription_Plans().click();
@@ -86,13 +86,13 @@ public class TC4_Enrollments_Flow {
         CourseD.Scroll_To_Enroll_Button();
         CourseD.Enroll_Now().click();
         Thread.sleep(3000);
-        driver.navigate().back();
+//        driver.navigate().back();
     }
 
     @AfterClass
     public void TearDown() throws InterruptedException {
         Thread.sleep(5000);
-        driver.quit();
+//        driver.quit();
         softAssert.assertAll();
     }
 }

@@ -34,8 +34,8 @@ public class TC1_Learner_Registration {
     public void Open_Registration_Form() throws InterruptedException {
         driver.navigate().to(HomePageURL);
         Thread.sleep(2000);
-        HomePageD.Sing_in_Button().click();
-        HomePageD.Create_an_Account_Button().click();
+        HomePageD.Register_Now_Button().click();
+//        HomePageD.Create_an_Account_Button().click();
 //        HomePageD.Join_as_Learner().click();
         Thread.sleep(1500);
     }
@@ -46,7 +46,7 @@ public class TC1_Learner_Registration {
         LearnerD.Last_Name().sendKeys(Last_name);
 //        LearnerD.Select_Gender(); Field Removed from the from
         Select CountryCode = new Select(LearnerD.CountryCode_Filed());
-        CountryCode.selectByIndex(21);
+        CountryCode.selectByIndex(3);
         LearnerD.Phone_Number().sendKeys(Learner_PhoneNumber);
 //        LearnerD.Select_Governorate(); Field Removed from the from
         LearnerD.Email().sendKeys(Learner_Email);

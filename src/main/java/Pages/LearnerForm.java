@@ -20,11 +20,11 @@ public class LearnerForm {
     By LastNameField = By.id("last_name");
     By GenderField = By.id("gender");
     By PhoneNumberField = By.id("phone_number");
-    By CountryCodeField = By.cssSelector("select[class='block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white sm:text-sm max-w-36']");
+    By CountryCodeField = By.cssSelector("select[class='block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white sm:text-sm max-w-36']");
     By GovernorateField = By.id("governorate_id");
     By EmailField = By.id("email");
     By PasswordField = By.id("password");
-    By RegisterBtn = By.cssSelector("button[class='flex justify-center w-full px-4 py-2 text-sm font-medium text-white transition-colors duration-200 border border-transparent rounded-md shadow-sm bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed']");
+    By RegisterBtn = By.cssSelector("button[class='flex justify-center px-4 py-2 w-full text-sm font-medium text-white rounded-md border border-transparent shadow-sm transition-colors duration-200 bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed']");
 
     // Actions
     public WebElement First_Name() {
