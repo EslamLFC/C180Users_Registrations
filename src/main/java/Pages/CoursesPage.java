@@ -20,7 +20,7 @@ public class CoursesPage {
     By EnrollNowBtn = By.cssSelector("a[class='inline-flex items-center px-8 py-3 text-base font-medium text-white transition-colors duration-200 border border-transparent rounded-md bg-primary-600 hover:bg-primary-700']");
     //Actions
     public WebElement View_Course(){
-        return driver.findElements(ViewCourseBtn).get(3);
+        return driver.findElements(ViewCourseBtn).get(2);
     }
     public WebElement Read_More(){
         return driver.findElements(ReadMoreBtn).getFirst();
