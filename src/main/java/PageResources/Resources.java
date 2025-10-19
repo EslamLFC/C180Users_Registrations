@@ -25,13 +25,13 @@ public class Resources {
     // Common
     public static final String HomePageURL = "https://staging-career-180.com/en/home";
     public static final String First_name = "Nour";
-    public static final String Last_name = "Hanafy";
+    public static final String Last_name = "El-Kelany";
     public static final String Password = "Pa$$w0rd!";
     public static final String JobTitle = "General Manager";
     public static final String PromoCode = "Quosvoluptatequia";
 
     // Learner
-    public static final String Learner_PhoneNumber = String.valueOf(generateRandomPhoneNumber());
+    public static final String Learner_PhoneNumber =  "01" + (generateRandomPhoneNumber());
     public static final String Learner_Email = First_name + Last_name + generateRandomEmailNumber() + "@teml.net";
 
     // Expert

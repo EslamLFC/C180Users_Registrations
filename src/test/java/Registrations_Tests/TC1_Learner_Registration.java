@@ -44,11 +44,14 @@ public class TC1_Learner_Registration {
     public void Fill_The_Form() throws InterruptedException {
         LearnerD.First_Name().sendKeys(First_name);
         LearnerD.Last_Name().sendKeys(Last_name);
-//        LearnerD.Select_Gender(); Field Removed from the from
-        Select CountryCode = new Select(LearnerD.CountryCode_Filed());
-        CountryCode.selectByIndex(3);
+//        LearnerD.Select_Gender(); --Field Removed from the from--
+//        Select CountryCode = new Select(LearnerD.CountryCode_Filed());
+//        CountryCode.selectByIndex(3);  --Country code menu element changed--
+        LearnerD.Country_Code_Menu().click();
+        Thread.sleep(500);
+        LearnerD.Country_Code_Option().click();
         LearnerD.Phone_Number().sendKeys(Learner_PhoneNumber);
-//        LearnerD.Select_Governorate(); Field Removed from the from
+//        LearnerD.Select_Governorate(); --Field Removed from the form--
         LearnerD.Email().sendKeys(Learner_Email);
         LearnerD.Password().sendKeys(Password);
         js.executeScript("window.scrollBy(0,2000)");

@@ -21,6 +21,8 @@ public class LearnerForm {
     By GenderField = By.id("gender");
     By PhoneNumberField = By.id("phone_number");
     By CountryCodeField = By.cssSelector("select[class='block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white sm:text-sm max-w-36']");
+    By CountryCodeMenu = By.cssSelector("button[aria-expanded='false']");
+    By CountryCodeOptions = By.cssSelector("button[class='w-full px-2 py-1.5 text-sm flex flex-row items-center gap-x-3 rounded-lg focus:outline-none focus:bg-gray-100 dark:focus:bg-neutral-700 transition-colors duration-100 text-gray-800 dark:text-neutral-300 hover:bg-gray-100 dark:hover:bg-neutral-700']");
     By GovernorateField = By.id("governorate_id");
     By EmailField = By.id("email");
     By PasswordField = By.id("password");
@@ -37,6 +39,12 @@ public class LearnerForm {
 
     public WebElement CountryCode_Filed() {
         return driver.findElement(CountryCodeField);
+    }
+    public WebElement Country_Code_Menu (){
+        return driver.findElement(CountryCodeMenu);
+    }
+    public WebElement Country_Code_Option(){
+        return driver.findElements(CountryCodeOptions).get(3);
     }
 
     public WebElement Phone_Number() {
