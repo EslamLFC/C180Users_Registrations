@@ -1,5 +1,7 @@
 package PageResources;
 
+import org.openqa.selenium.Keys;
+
 import java.util.Random;
 
 public class Resources {
@@ -29,6 +31,7 @@ public class Resources {
     public static final String Password = "Pa$$w0rd!";
     public static final String JobTitle = "General Manager";
     public static final String PromoCode = "Quosvoluptatequia";
+    public static final String CountryCodeSelection = "+20" + Keys.TAB +Keys.ENTER;
 
     // Learner
     public static final String Learner_PhoneNumber =  "01" + (generateRandomPhoneNumber());

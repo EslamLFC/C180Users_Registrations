@@ -3,6 +3,7 @@ package Registrations_Tests;
 import Pages.Homepage;
 import Pages.LearnerForm;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -48,8 +49,9 @@ public class TC1_Learner_Registration {
 //        Select CountryCode = new Select(LearnerD.CountryCode_Filed());
 //        CountryCode.selectByIndex(3);  --Country code menu element changed--
         LearnerD.Country_Code_Menu().click();
-        Thread.sleep(500);
+        Thread.sleep(1000);
         LearnerD.Country_Code_Option().click();
+        Thread.sleep(500);
         LearnerD.Phone_Number().sendKeys(Learner_PhoneNumber);
 //        LearnerD.Select_Governorate(); --Field Removed from the form--
         LearnerD.Email().sendKeys(Learner_Email);
