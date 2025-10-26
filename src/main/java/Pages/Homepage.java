@@ -25,7 +25,7 @@ public class Homepage {
     // Expert Form Button
     By JoinExpert = By.cssSelector("a[href='https://staging-career-180.com/en/auth/register/expert']");
     By NotificationBellIcon = By.cssSelector("body > header:nth-child(1) > nav:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > button:nth-child(1) > i:nth-child(1)");
-    By SubscriptionPlansBtns = By.cssSelector("a[href][class='block px-6 py-3 w-full text-sm font-medium text-center text-white rounded-md rounded-t-none transition-colors duration-200 bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-900']");
+    By SubscriptionPlansBtns = By.cssSelector("button[class='block px-6 py-3 w-full text-sm font-medium text-center text-white rounded-md rounded-t-none transition-colors duration-200 bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-900']");
     By QualifyingMenu = By.cssSelector("button[id='hs-navbar-example-dropdown']");
     By RecordedCoursesTab = By.cssSelector("div[class='hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] open'] a:nth-child(1)");
     By VacanciesAndInternshipsMenu = By.cssSelector("button[id='hs-navbar-example-dropdown']");

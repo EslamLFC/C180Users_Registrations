@@ -64,6 +64,6 @@ public class Resources {
     }
 
     // Login Credentials
-    public static final String Login_Email = "nourhanafy6220@teml.net"; // This Email should be changed after Success subscribe process
+    public static final String Login_Email = "NourEl-Kelany7283@teml.net"; // This Email should be changed after Success subscribe process
 
 }

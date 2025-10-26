@@ -14,8 +14,8 @@ public class CheckoutPage {
 
     // Locators
     By PromoCodeField = By.cssSelector("input[placeholder='Promo Code']");
-    By ApplyDiscountBtn = By.cssSelector("button[class='px-4 py-2 text-sm font-medium text-white rounded-md transition-colors duration-200 bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:focus:ring-offset-gray-900']");
-    By GetForFreeBtn = By.cssSelector("button[class='px-6 py-3 w-full text-base font-medium text-white bg-green-600 rounded-md shadow-sm transition-colors duration-200 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 disabled:opacity-50 disabled:cursor-not-allowed dark:focus:ring-offset-gray-900']");
+    By ApplyDiscountBtn = By.cssSelector("div[class='pt-2'] button");
+    By GetForFreeBtn = By.cssSelector("div[class='p-6 bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700'] button");
     By SuccessPage = By.cssSelector("img[class='h-24 w-auto mb-3']");
 
     // Actions

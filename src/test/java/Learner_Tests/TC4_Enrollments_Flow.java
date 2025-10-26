@@ -89,7 +89,7 @@ public class TC4_Enrollments_Flow {
         CourseWatching.Play_Button().click();
         Thread.sleep(500);
         CourseWatching.Skip_10Sec().click();
-//        driver.navigate().back();
+        driver.navigate().back();
     }
 
     @AfterClass
