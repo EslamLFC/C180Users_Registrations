@@ -5,6 +5,7 @@ import Pages.LearnerForm;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
@@ -23,7 +24,7 @@ public class TC1_Learner_Registration {
 
     @BeforeClass
     public void SetUp() {
-        driver = new EdgeDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.manage().window().maximize();
         HomePageD = new Homepage(driver);

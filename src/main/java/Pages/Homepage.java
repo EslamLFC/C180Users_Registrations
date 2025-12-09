@@ -15,7 +15,7 @@ public class Homepage {
     }
 
     // Locators
-    By Register_Now_Btn = By.cssSelector("div[class='hidden md:block lg:block'] a[href='https://staging-career-180.com/en/auth/register/user']");
+    By Register_Now_Btn = By.cssSelector("div[class='hidden md:block lg:block'] a[href*='/register']");
     By Sing_inBtn = By.cssSelector("body > header:nth-child(1) > nav:nth-child(1) > div:nth-child(3) > div:nth-child(1) > button:nth-child(4) > span:nth-child(1)");
     By Create_AccountBtn = By.cssSelector("a[href='https://staging-career-180.com/en/auth/register/user?redirectUrl=https://staging-career-180.com/en/home']");
     // Learner Form Button

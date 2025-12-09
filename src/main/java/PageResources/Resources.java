@@ -25,7 +25,7 @@ public class Resources {
     }
 
     // Common
-    public static final String HomePageURL = "https://staging-career-180.com/en/home";
+    public static final String HomePageURL = "https://career-180.com/en/home";
     public static final String First_name = "Nour";
     public static final String Last_name = "El-Kelany";
     public static final String Password = "Pa$$w0rd!";

@@ -49,7 +49,7 @@ public class TC4_Enrollments_Flow {
         softAssert.assertTrue(HomePageD.Notifications_Bell_Icon().isDisplayed(), "Login Failed");
     }
 
-    @Test(priority = 1/*, enabled = false*/)
+    @Test(priority = 1, enabled = false)
     public void Subscribe() throws InterruptedException {
         js.executeScript("window.scrollBy(0,3500)");
         Thread.sleep(1000);
@@ -85,11 +85,16 @@ public class TC4_Enrollments_Flow {
         CourseD.Scroll_To_Enroll_Button();
         CourseD.Enroll_Now().click();
         Thread.sleep(3000);
-        js.executeScript("window.scrollBy(0,200)");
+        js.executeScript("window.scrollBy(0,100)");
         CourseWatching.Play_Button().click();
-        Thread.sleep(500);
-        CourseWatching.Skip_10Sec().click();
-        driver.navigate().back();
+        Thread.sleep(1500);
+        for (int i = 0; i<=60; i++) {
+            CourseWatching.Skip_10Sec().click();
+            Thread.sleep(500);
+        }
+        CourseWatching.Play_Button().click();
+        Thread.sleep(2000);
+        driver.navigate().refresh();
     }
 
     @AfterClass
