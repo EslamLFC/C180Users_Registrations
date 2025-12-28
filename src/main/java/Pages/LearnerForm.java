@@ -22,7 +22,7 @@ public class LearnerForm {
     By PhoneNumberField = By.id("phone_number");
     By CountryCodeField = By.cssSelector("select[class='block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white sm:text-sm max-w-36']");
     By CountryCodeMenu = By.cssSelector("button[aria-expanded='false']");
-    By CountryCodeOptions = By.cssSelector("body > div:nth-child(1) > main:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > form:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)");
+    By CountryCodeOptions = By.cssSelector("[data-title-value='+20 (Egypt) ']");
     By GovernorateField = By.id("governorate_id");
     By EmailField = By.id("email");
     By PasswordField = By.id("password");

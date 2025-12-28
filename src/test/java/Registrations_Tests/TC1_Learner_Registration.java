@@ -60,6 +60,8 @@ public class TC1_Learner_Registration {
         js.executeScript("window.scrollBy(0,2000)");
         Thread.sleep(1000);
         LearnerD.RegisterButton().click();
+        Thread.sleep(4000);
+        LearnerD.RegisterButton().click();
     }
 
     @AfterClass
